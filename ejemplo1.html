@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Example 1</title>
+    <meta charset="utf-8">
+    <script src="http://fb.me/react-with-addons-0.12.0.js"></script>
+    <!--Interpretador de JSX-->
+    <script src="http://fb.me/JSXTransformer-0.12.0.js"></script>
+  </head>
+  <body>
+      <div id="ejemplo"></div>
+        <script type="text/jsx">
+          var Saludo= React.createClass({ //estamos generando una funcion
+            render:function(){
+              return <div>&iexcl; Hola {this.props.nombre} ! </div>;
+            }
+          });
+          React.render(
+            <Saludo nombre="React1.com"/>, document.body);
+            //utilizamos la variable creada "saludo" y le adjuntamos el valor de la variable "nombre "
+    </script>
+  </body>
+</html>

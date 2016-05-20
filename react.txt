@@ -1,0 +1,44 @@
+#1
+Que es react.js?
+Biblioteca js desarollado en facebook
+Objetivo: facilitar la creación de componente interactivos, que js se tranforme en legible
+Funciona: Del lado del cliente y servidor, el codigo es para el cliente y sercidor y se interpreta en ambos lados
+
+Utiliza DOM virtual: document object model
+Selectivamente genera subarboles de los nodos, sobre la base de cambios del estado, esto significa que todo el tiempo se
+actualizan los componentes.
+
+#2
+*Componentes
+Su unico objetivo es descomponer los elementos de diseño comunes(botones, campos de formulario, componentes de diseño)
+Por que componentes?
+Pueden ser reutilizados.
+Menos codigo!
+Reduccion de tiempo!
+Menor consumo!
+
+              ***Declaracion: React.createClass***
+
+Un componente tiene:
+#3
+Props: atributos o propiedades de React.js, y poseen valores controlados que un compoenente puede manipular, gracias a los props podemos
+otorgar valores recibir y manipular los componentes. Y estan disponibles en this.props!!!
+Estos son la clave de la reutilización de los componentes, el objetivo es ayudar a los  componentes  anidados y el control de las UI
+!!Cuidado para generar props, tratar de no generar dependencias!  Entrelazador de manera permanente NO!
+
+#4
+Estados: Las propiedades se definen cuando se crean los componentes. Las propiedades son definidas en nuestros componentes mientras que los estados
+pueden variar respecto al tiempo en el que se ejecutan los componentes. Ejemplo "boton on/off" el estado cambia atraves de eventos
+
+Ciclo de vida
+Al crear uan clase de componente invocando React.createClas(), puede encontrar opcionalmente otros metodos en el ciclo de vida:
+Metodos de ciclo de vida:
+ 1-componentWillMount: Se invoca una vez en el cliente y en el servidor. Se ejecuta de primero
+ 2-conponentDidMount: solo se ejecuta en el cliente, una vez mostrado el componente vamos a ver a DidMount
+
+ 1- onChange {this.props.EstadoTareaRealizada.bind(this, itemText)}
+Ayuda a identificar que va a relizarse una instruccion cuando un item sea cambiado, el check box desencadena un estado que altera el estatus
+de la tarrea
+
+ line-through textDecoration: 'line-through'
+ tacha la tarea
